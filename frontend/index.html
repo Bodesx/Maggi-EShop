@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<title>E-Shop</title>
+
+
+
+
+
+</head>
+
+<body>
+<div class="overlay" id="loading-overlay">
+    <svg class="shop-cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px"
+        height="128px" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+            <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                <circle cx="43" cy="111" r="13" />
+                <circle cx="102" cy="111" r="13" />
+            </g>
+            <g class="cart__lines" stroke="currentColor">
+                <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
+                    stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                    <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68"
+                        stroke-dashoffset="81.68" />
+                </g>
+                <g class="cart__wheel2" transform="rotate(90,102,111)">
+                    <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68"
+                        stroke-dashoffset="81.68" />
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+
+<div class="overlay" id="message-overlay"></div>
+
+
+
+    <div class="grid-container">
+        <header id="header-container"></header>
+        <aside id="aside-container"></aside>
+        <main id="main-container"></main>
+
+        <footer>
+            all right reserved Bodesx codes 
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
